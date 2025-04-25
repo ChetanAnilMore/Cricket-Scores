@@ -14,7 +14,7 @@ require_once './includes/db_connect.php';
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Live Cricket Scores | Cricket Score Management System</title>
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="styles/scores.css" />
+  <link rel="stylesheet" href="css/scores.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -37,7 +37,7 @@ require_once './includes/db_connect.php';
         <li><a href="./html/scores.php" class="active">Scores</a></li>
         <li><a href="./html/about.html">About</a></li>
         <li>
-          <a id="login-button" href="../login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+          <a id="login-button" href="login.php"><i class="fas fa-sign-in-alt"></i> Login</a>
         </li>
       </ul>
     </nav>
@@ -193,7 +193,9 @@ require_once './includes/db_connect.php';
               <label for="batsman" class="form-label">Batsman</label>
               <select id="batsman" name="batsman" class="form-select">
                 <option value="">Select Batsman</option>
-                <!-- Options will be populated dynamically -->
+                <option value="Rohit Sharma">Rohit Sharma</option>
+                <option value="Virat Kohli">Virat Kohli</option>
+                <option value="M.S. Dhoni">Thala</option>
               </select>
             </div>
 
@@ -201,7 +203,8 @@ require_once './includes/db_connect.php';
               <label for="bowler" class="form-label">Bowler</label>
               <select id="bowler" name="bowler" class="form-select">
                 <option value="">Select Bowler</option>
-                <!-- Options will be populated dynamically -->
+                <option value="Chetan">Chetan More</option>
+                <option value="Dev Charan">Dev Charan</option>
               </select>
             </div>
           </div>
@@ -287,16 +290,16 @@ require_once './includes/db_connect.php';
       <div class="footer-section">
         <h4>Quick Links</h4>
         <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../html/matches.html">Matches</a></li>
-          <li><a href="../html/scores.php">Scores</a></li>
-          <li><a href="../html/about.html">About Us</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="./html/matches.html">Matches</a></li>
+          <li><a href="scores.php">Scores</a></li>
+          <li><a href="./html/about.html">About Us</a></li>
         </ul>
       </div>
       <div class="footer-section">
         <h4>Contact</h4>
         <p><i class="fas fa-envelope"></i> info@cricketscores.com</p>
-        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+        <p><i class="fas fa-phone"></i> +91 1234567890</p>
       </div>
       <div class="footer-section">
         <h4>Follow Us</h4>
