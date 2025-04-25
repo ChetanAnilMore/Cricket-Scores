@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Real-time cricket scores, match schedules, and player statistics"
+    />
+    <title>Cricket Score Management System | Live Scores & Match Updates</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img
+          class="nav-image"
+          src="assets/logo.jpeg"
+          alt="Cricket Score Management System Logo"
+        />
+        <h1 class="logo-text">CricketScores</h1>
+      </div>
+      <nav class="nav-bar">
+        <button
+          class="mobile-menu-button"
+          aria-expanded="false"
+          aria-controls="nav-list"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-list" id="nav-list">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="html/matches.html">Matches</a></li>
+          <li><a href="html/scores.html">Scores</a></li>
+          <li><a href="html/about.html">About</a></li>
+          <li>
+            <a id="login-button" href="login.html"
+              ><i class="fas fa-sign-in-alt"></i> Login</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero-section">
+        <div class="hero-content">
+          <h2>Live Cricket Scores & Updates</h2>
+          <p>
+            Get real-time scores, match schedules, and player statistics for all
+            major cricket tournaments
+          </p>
+          <div class="hero-buttons">
+            <a href="scores.html" class="btn primary">View Live Scores</a>
+            <a href="matches.html" class="btn secondary">Upcoming Matches</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="live-matches">
+        <h3>Live Now</h3>
+        <div class="match-cards">
+          <div class="match-card">
+            <div class="teams">
+              <div class="team">
+                <img src="assets/india.png" alt="India" />
+                <span>IND</span>
+              </div>
+              <div class="vs">VS</div>
+              <div class="team">
+                <img src="assets/australia.png" alt="Australia" />
+                <span>AUS</span>
+              </div>
+            </div>
+            <div class="match-info">
+              <p class="score">IND 287/6 (48.3)</p>
+              <p class="status">India needs 32 runs in 9 balls</p>
+              <p class="tournament">ICC World Cup 2023</p>
+            </div>
+          </div>
+          <!-- More match cards would go here -->
+        </div>
+      </section>
+
+      <section class="features">
+        <h2>Why Choose Our Platform</h2>
+        <div class="cards">
+          <div class="card">
+            <div class="card-icon">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <div class="container">
+              <h4>Real-time Updates</h4>
+              <p>
+                Get ball-by-ball commentary and instant score updates with our
+                lightning-fast system
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-icon">
+              <i class="fas fa-calendar-alt"></i>
+            </div>
+            <div class="container">
+              <h4>Comprehensive Schedule</h4>
+              <p>
+                Never miss a match with our complete tournament schedules and
+                reminders
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="container">
+              <h4>Detailed Statistics</h4>
+              <p>
+                Access player and team statistics with advanced analytics and
+                historical data
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <div class="container">
+              <h4>Mobile Friendly</h4>
+              <p>
+                Responsive design works perfectly on all devices from desktop to
+                mobile
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="newsletter">
+        <h3>Stay Updated</h3>
+        <p>
+          Subscribe to our newsletter for the latest cricket news and updates
+        </p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Enter your email" required />
+          <button type="submit" class="btn primary">Subscribe</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>CricketScores</h4>
+          <p>
+            The most reliable source for live cricket scores, match schedules,
+            and player statistics.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="matches.html">Matches</a></li>
+            <li><a href="scores.html">Scores</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p><i class="fas fa-envelope"></i> info@cricketscores.com</p>
+          <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+        </div>
+        <div class="footer-section">
+          <h4>Follow Us</h4>
+          <ul class="socials">
+            <li>
+              <a href="#" aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" aria-label="YouTube"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Cricket Score Management System. All rights reserved.</p>
+        <div class="legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
